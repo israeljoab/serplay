@@ -6,6 +6,7 @@ if(isset($_POST['botaoLogin'])) {
     $comSucesso = $conta->login($matricula, $senha);
 
     if($comSucesso == true) {
+        $_SESSION['usuarioLogado'] = $matricula;
         header("Location: index.php");
     }
 

@@ -30,6 +30,7 @@ if(isset($_POST['botaoRegistar'])) {
     $comSucesso = $conta->registrar($matricula, $nomeCompleto, $email, $emailConfirmacao, $senha, $senhaConfirmacao);
 
     if($comSucesso == true) {
+        $_SESSION['usuarioLogado'] = $matricula;
         header("Location: index.php");
     }
 

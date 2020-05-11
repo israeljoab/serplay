@@ -6,7 +6,7 @@ if(isset($_POST['botaoLogin'])) {
     $result = $conta->login($matricula, $senha);
 
     if($result == true) {
-        header("Location: index.php")
+        header("Location: index.php");
     }
 
 }

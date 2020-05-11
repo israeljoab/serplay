@@ -10,6 +10,7 @@ class Constantes {
 	public static $emailInvalido = "Email inválido";
 	public static $emailsDiferentes = "Seus e-mails não correspondem";
 	public static $emailExistente = "Esse email já está cadastrado";
+	public static $loginFalhou = "Sua matrícula ou senha está incorreta";
 
 }
 

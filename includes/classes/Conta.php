@@ -9,6 +9,21 @@
 			$this->erroArray = array();
 		}
 
+		public function login($mat, $sen) {
+
+			$sen = md5($sen);
+			$query = mysqli_query($this->conex, "SELECT * FROM usuarios WHERE matricula='$mat' AND senha='$sen'");
+
+			if(mysqli_num_rows($query) == 1) {
+				return true;
+			}
+			else {
+				array_push($this->erroArray, Constantes::$loginFalhou);
+				return false;
+			}
+
+		}
+
 		public function registrar ($mat, $nomCom, $em, $em2, $sen, $sen2) {
 			$this->validarMatricula($mat);
 			$this->validarNomeCompleto($nomCom);

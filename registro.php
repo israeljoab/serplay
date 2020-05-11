@@ -30,6 +30,7 @@
         <form id="formularioLogin" action="registro.php" method="POST"> 
             <h2>Login</h2>
             <p>
+                <?php echo $conta->getErro(Constantes::$loginFalhou); ?>
                 <input id="loginMatricula" name="loginMatricula" type="text" placeholder="Digite sua matrícula" required>
             </p>
             

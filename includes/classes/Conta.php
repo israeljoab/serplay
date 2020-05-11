@@ -50,7 +50,7 @@
 
 			$verificarMatriculaExistente = mysqli_query($this->conex,  "SELECT matricula FROM usuarios WHERE matricula='$mat'");
 			if(mysqli_num_rows($verificarMatriculaExistente) != 0) {
-				array_push($this->erroArray, Constantes::matriculaExistente);
+				array_push($this->erroArray, Constantes::$matriculaExistente);
 				return;
 			}
 

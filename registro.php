@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/registro.css">
 </head>
 <body>
-    <div id="backgroud">
+    <div id="background">
         <div id="entradaDados">
             <form id="formularioLogin" action="registro.php" method="POST"> 
                 <h2>Login</h2>

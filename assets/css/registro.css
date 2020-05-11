@@ -1,6 +1,12 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
 #background {
-	background-color: #000;
-    background-image: url(../images/bg.png);
+	background-color: #f5ecec;
+    background-image: url(../imagens/bg.png);
     background-position: center;
     background-size: cover;
     display: table;

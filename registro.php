@@ -45,6 +45,8 @@
             <h2>Inscrever-se no SerPlay</h2>
             <p>
                 <?php echo $conta->getErro(Constantes::$matriculaTamanho); ?>
+                <?php echo $conta->getErro(Constantes::$matriculaExistente); ?>
+                <?php echo $conta->getErro(Constantes::$emailExistente); ?>
                 <input id="matricula" name="matricula" type="text" placeholder="Digite sua matrícula" value="<?php getEntradaDados('matricula') ?>" required>
             </p>
 

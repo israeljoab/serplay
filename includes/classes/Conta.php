@@ -48,6 +48,12 @@
 				return;
 			}
 
+			$verificarMatriculaExistente = mysqli_query($this->conex,  "SELECT matricula FROM usuarios WHERE matricula='$mat'");
+			if(mysqli_num_rows($verificarMatriculaExistente) != 0) {
+				array_push($this->erroArray, Constantes::matriculaExistente);
+				return;
+			}
+
 		}
 
 		private function validarNomeCompleto($nomCom) {
@@ -65,6 +71,12 @@
 
 			if(!filter_var($em, FILTER_VALIDATE_EMAIL)) {
 				array_push($this->erroArray, Constantes::$emailInvalido);
+				return;
+			}
+
+			$verificarEmailExistente = mysqli_query($this->conex,  "SELECT email FROM usuarios WHERE email='$em'");
+			if(mysqli_num_rows($verificarEmailExistente) != 0) {
+				array_push($this->erroArray, Constantes::$emailExistente);
 				return;
 			}
 

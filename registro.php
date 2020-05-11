@@ -27,60 +27,64 @@
 </head>
 <body>
     <div id="background">
-        <div id="entradaDados">
-            <form id="formularioLogin" action="registro.php" method="POST"> 
-                <h2>Login</h2>
-                <p>
-                    <?php echo $conta->getErro(Constantes::$loginFalhou); ?>
-                    <input id="loginMatricula" name="loginMatricula" type="text" placeholder="Digite sua matrícula" required>
-                </p>
-                
-                <p>
-                    <input id="loginSenha" name="loginSenha" type="password" placeholder="Senha" required>
-                </p>
 
-                <button type="submit" name="botaoLogin">Entrar</button>
-                
-            </form>
+        <div id="loginContainer">
 
-            <form id="formularioRegistro" action="registro.php" method="POST"> 
-                <h2>Inscrever-se no SerPlay</h2>
-                <p>
-                    <?php echo $conta->getErro(Constantes::$matriculaTamanho); ?>
-                    <?php echo $conta->getErro(Constantes::$matriculaExistente); ?>
-                    <input id="matricula" name="matricula" type="text" placeholder="Digite sua matrícula" value="<?php getEntradaDados('matricula') ?>" required>
-                </p>
+            <div id="entradaDados">
+                <form id="formularioLogin" action="registro.php" method="POST"> 
+                    <h2>Login</h2>
+                    <p>
+                        <?php echo $conta->getErro(Constantes::$loginFalhou); ?>
+                        <input id="loginMatricula" name="loginMatricula" type="text" placeholder="Digite sua matrícula" required>
+                    </p>
+                    
+                    <p>
+                        <input id="loginSenha" name="loginSenha" type="password" placeholder="Senha" required>
+                    </p>
 
-                <p>
-                    <?php echo $conta->getErro(Constantes::$nomeCompleto); ?>
-                    <input id="nomeCompleto" name="nomeCompleto" type="text" placeholder="Digite seu nome" value="<?php getEntradaDados('nomeCompleto') ?>" required>
-                </p>
+                    <button type="submit" name="botaoLogin">Entrar</button>
+                    
+                </form>
 
-                <p>
-                    <?php echo $conta->getErro(Constantes::$emailsDiferentes); ?>
-                    <?php echo $conta->getErro(Constantes::$emailInvalido); ?>
-                    <?php echo $conta->getErro(Constantes::$emailExistente); ?>
-                    <input id="email" name="email" type="email" placeholder="exemplo@exemplo.com" value="<?php getEntradaDados('email') ?>" required>
-                </p>
+                <form id="formularioRegistro" action="registro.php" method="POST"> 
+                    <h2>Inscrever-se no SerPlay</h2>
+                    <p>
+                        <?php echo $conta->getErro(Constantes::$matriculaTamanho); ?>
+                        <?php echo $conta->getErro(Constantes::$matriculaExistente); ?>
+                        <input id="matricula" name="matricula" type="text" placeholder="Digite sua matrícula" value="<?php getEntradaDados('matricula') ?>" required>
+                    </p>
 
-                <p>
-                    <input id="emailConfirmacao" name="emailConfirmacao" type="email" placeholder="Confirmar E-mail" value="<?php getEntradaDados('emailConfirmacao') ?>" required>
-                </p>
+                    <p>
+                        <?php echo $conta->getErro(Constantes::$nomeCompleto); ?>
+                        <input id="nomeCompleto" name="nomeCompleto" type="text" placeholder="Digite seu nome" value="<?php getEntradaDados('nomeCompleto') ?>" required>
+                    </p>
 
-                <p>
-                    <?php echo $conta->getErro(Constantes::$senhasDiferentes); ?>
-                    <?php echo $conta->getErro(Constantes::$senhasAlfanumericas); ?>
-                    <?php echo $conta->getErro(Constantes::$senhasTamanho); ?>
-                    <input id="senha" name="senha" type="password" placeholder="Senha" required>
-                </p>
+                    <p>
+                        <?php echo $conta->getErro(Constantes::$emailsDiferentes); ?>
+                        <?php echo $conta->getErro(Constantes::$emailInvalido); ?>
+                        <?php echo $conta->getErro(Constantes::$emailExistente); ?>
+                        <input id="email" name="email" type="email" placeholder="exemplo@exemplo.com" value="<?php getEntradaDados('email') ?>" required>
+                    </p>
 
-                <p>
-                    <input id="senhaConfirmacao" name="senhaConfirmacao" type="password" placeholder="Confirme sua Senha" required>
-                </p>
+                    <p>
+                        <input id="emailConfirmacao" name="emailConfirmacao" type="email" placeholder="Confirmar E-mail" value="<?php getEntradaDados('emailConfirmacao') ?>" required>
+                    </p>
 
-                <button type="submit" name="botaoRegistar">INSCREVER-SE</button>
-                
-            </form>
+                    <p>
+                        <?php echo $conta->getErro(Constantes::$senhasDiferentes); ?>
+                        <?php echo $conta->getErro(Constantes::$senhasAlfanumericas); ?>
+                        <?php echo $conta->getErro(Constantes::$senhasTamanho); ?>
+                        <input id="senha" name="senha" type="password" placeholder="Senha" required>
+                    </p>
+
+                    <p>
+                        <input id="senhaConfirmacao" name="senhaConfirmacao" type="password" placeholder="Confirme sua Senha" required>
+                    </p>
+
+                    <button type="submit" name="botaoRegistar">INSCREVER-SE</button>
+                    
+                </form>
+            </div>
         </div>
     </div>
 </body>

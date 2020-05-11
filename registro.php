@@ -46,7 +46,6 @@
             <p>
                 <?php echo $conta->getErro(Constantes::$matriculaTamanho); ?>
                 <?php echo $conta->getErro(Constantes::$matriculaExistente); ?>
-                <?php echo $conta->getErro(Constantes::$emailExistente); ?>
                 <input id="matricula" name="matricula" type="text" placeholder="Digite sua matrícula" value="<?php getEntradaDados('matricula') ?>" required>
             </p>
 
@@ -58,6 +57,7 @@
             <p>
                 <?php echo $conta->getErro(Constantes::$emailsDiferentes); ?>
 				<?php echo $conta->getErro(Constantes::$emailInvalido); ?>
+                <?php echo $conta->getErro(Constantes::$emailExistente); ?>
                 <input id="email" name="email" type="email" placeholder="exemplo@exemplo.com" value="<?php getEntradaDados('email') ?>" required>
             </p>
 

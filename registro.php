@@ -30,6 +30,15 @@
     <script src="assets/js/registro.js"></script>
 </head>
 <body>
+
+    <script>
+        $(document).ready(function() {
+
+                $("#formularioLogin").hide();
+                $("#formularioRegistro").show();
+        });   
+    </script>
+
     <div id="background">
 
         <div id="loginContainer">

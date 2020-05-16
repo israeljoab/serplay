@@ -1,11 +1,12 @@
-html,
+html, 
 body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
+	padding: 0;
+	margin: 0;
+	height: 100%;
 }
+
 #background {
-	background-color: #f5ecec;
+	background-color: rgb(223, 209, 209);
     background-image: url(../imagens/bg.png);
     background-position: center;
     background-size: cover;
@@ -15,7 +16,7 @@ body {
 }
 
 #loginContainer * {
-	color: #fff;
+	color: #6593a5;
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-weight: normal;
 	line-height: 1em;
@@ -47,36 +48,36 @@ body {
    color:    #fff;
 }
 
-#inputContainer {
+#entradaDados {
     width: 400px;
     padding: 45px;
     float: left;
-    border-right: 1px solid #999;
+    border-right: 3px solid rgb(169, 189, 196);
 }
 
-#inputContainer h2 {
+#entradaDados h2 {
 	text-align: center;
 }
 
-#inputContainer input[type="text"],
-#inputContainer input[type="email"],
-#inputContainer input[type="senha"] {
+#entradaDados input[type="text"],
+#entradaDados input[type="email"],
+#entradaDados input[type="password"] {
 	display: block;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgb(158, 155, 155);
     height: 27px;
     line-height: 27px;
     width: 100%;
 }
 
-#inputContainer label {
-	color: #a0a0a0;
+#entradaDados label {
+	color: rgb(50, 124, 151);
     font-size: 13px;
     margin-top: 15px;
 }
 
-#inputContainer button {
+#entradaDados button {
 	background-color: transparent;
     border: 2px solid #fff;
     border-radius: 250px;
@@ -89,6 +90,15 @@ body {
     width: 100%;
 }
 
-#inputContainer button:hover {
+#entradaDados button:hover {
 	cursor: pointer;
+}
+
+.criarContaTexto span {
+	font-weight: bold;
+    font-size: 12px;
+}
+
+.criarContaTexto {
+	text-align: center;
 }

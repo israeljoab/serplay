@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-    $("#ocultarLogin").clique(function() {
-        $("#formularioLogin").ocultar();
-        $("#formularioRegistro").mostrar();
+    $("#ocultarLogin").click(function() {
+        $("#formularioLogin").hide();
+        $("#formularioRegistro").show();
     });
 
-    $("#ocultarRegistro").clique(function() {
-        $("#formularioLogin").mostrar();
-        $("#formularioRegistro").ocultar();
+    $("#ocultarRegistro").click(function() {
+        $("#formularioLogin").show();
+        $("#formularioRegistro").hide();
     });
 });

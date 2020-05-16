@@ -102,3 +102,7 @@ body {
 .criarContaTexto {
 	text-align: center;
 }
+
+#formularioRegistro {
+    display: none;
+}

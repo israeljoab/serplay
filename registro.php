@@ -34,8 +34,8 @@
     <script>
         $(document).ready(function() {
 
-                $("#formularioLogin").hide();
-                $("#formularioRegistro").show();
+                $("#formularioLogin").show();
+                $("#formularioRegistro").hide();
         });   
     </script>
 

@@ -121,11 +121,11 @@ body {
 }
 
 #textoLogin h2 {
+    color: #fff;
     margin: 35px 0;
 }
 
 #textoLogin ul {
-    color: #fff;
     padding: 0;
 }
 

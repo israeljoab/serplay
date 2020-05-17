@@ -31,13 +31,26 @@
 </head>
 <body>
 
-    <script>
-        $(document).ready(function() {
+        <?php
 
-                $("#formularioLogin").show();
-                $("#formularioRegistro").hide();
-        });   
-    </script>
+        if(isset($_POST['botaoRegistrar'])) {
+            echo '<script>
+                    $(document).ready(function() {
+                        $("#formularioLogin").hide();
+                        $("#formularioRegistro").show();
+                    });
+                </script>';
+        }
+        else {
+            echo '<script>
+                    $(document).ready(function() {
+                        $("#formularioLogin").show();
+                        $("#formularioRegistro").hide();
+                    });
+                </script>';
+        }
+
+        ?>
 
     <div id="background">
 

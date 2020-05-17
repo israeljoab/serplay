@@ -52,7 +52,7 @@ body {
     width: 400px;
     padding: 45px;
     float: left;
-    border-right: 3px solid rgb(169, 189, 196);
+    border-right: 3px solid rgb(171, 179, 182);
 }
 
 #entradaDados h2 {
@@ -97,12 +97,14 @@ body {
 .criarContaTexto span {
 	font-weight: bold;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .criarContaTexto {
 	text-align: center;
 }
 
-#formularioRegistro {
-    display: none;
+#formularioRegistro,
+#formularioLogin {
+	display: none;
 }

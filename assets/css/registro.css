@@ -75,6 +75,7 @@ body {
 	color: rgb(16, 53, 78);
     font-size: 13px;
     margin-top: 15px;
+    display: block;
 }
 
 #entradaDados button {
@@ -134,4 +135,10 @@ body {
     font-size: 20px;
     list-style-type: none;
     padding: 5px;
+}
+
+#entradaDados .errorMessage {
+    color: rgb(16, 53, 78);
+    font-size: 12px;
+    display: block;
 }

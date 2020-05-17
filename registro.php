@@ -62,7 +62,7 @@
                     <p>
                         <?php echo $conta->getErro(Constantes::$loginFalhou); ?>
                         <label for="loginMatricula">👨‍🎓 Matrícula</label>
-                        <input id="loginMatricula" name="loginMatricula" type="text" placeholder="Digite sua matrícula" required>
+                        <input id="loginMatricula" name="loginMatricula" type="text" placeholder="Digite sua matrícula" value="<?php getEntradaDados('loginmatricula') ?>" required>
                     </p>
                     
                     <p>

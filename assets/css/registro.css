@@ -16,7 +16,7 @@ body {
 }
 
 #loginContainer * {
-	color: #6593a5;
+	color: rgb(16, 53, 78);
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-weight: normal;
 	line-height: 1em;
@@ -49,10 +49,10 @@ body {
 }
 
 #entradaDados {
-    width: 400px;
+    width: 350px;
     padding: 45px;
     float: left;
-    border-right: 3px solid rgb(171, 179, 182);
+    border-right: 3px solid rgb(16, 53, 78);
 }
 
 #entradaDados h2 {
@@ -72,7 +72,7 @@ body {
 }
 
 #entradaDados label {
-	color: rgb(50, 124, 151);
+	color: rgb(16, 53, 78);
     font-size: 13px;
     margin-top: 15px;
 }
@@ -121,7 +121,7 @@ body {
 }
 
 #textoLogin h2 {
-    color: #fff;
+    color: rgb(16, 53, 78);
     margin: 35px 0;
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 #textoLogin li {
-    color: #fff;
+    color: rgb(244, 246, 250);
     font-size: 20px;
     list-style-type: none;
     padding: 5px;

@@ -132,9 +132,9 @@
                 <h1>Podcast Acadêmico</h1>
                 <h2>Mais praticidade para sua vivência acadêmica</h2>
                 <ul>
-                    <li>Aulas</li>
-                    <li>Conteúdo Complementar</li>
-                    <li>Palestras</li>
+                    <li>✔Aulas</li>
+                    <li>✔Conteúdo Complementar</li>
+                    <li>✔Palestras</li>
                 </ul>
             </div>
         </div>

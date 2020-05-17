@@ -114,21 +114,21 @@ body {
     display: table-cell;
 }
 
-#textologin h1 {
-    color: rgb(29, 92, 134);
+#textoLogin h1 {
+    color: rgb(16, 53, 78);
     font-size: 50px;
     font-weight: bold;
 }
 
-#textologin h2 {
+#textoLogin h2 {
     margin: 35px 0;
 }
 
-#textologin ul {
+#textoLogin ul {
     padding: 0;
 }
 
-#textologin li {
+#textoLogin li {
     font-size: 20px;
     list-style-type: none;
     padding: 5px;

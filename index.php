@@ -15,10 +15,14 @@ else {
 <html>
 <head>
     <title>Bem vindo ao SerPlay!</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    Olá, Mundo!
+    <div id="playBarConteiner">
+
+    </div>
 </body>
 
 </html>

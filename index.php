@@ -27,6 +27,14 @@ if (isset($_SESSION['usuarioLogado'])) {
 
             <?php include("includes/navBarContainer.php");?>
 
+            <div id="mainViewContainer">
+
+                <div id="mainContent">
+
+                </div>
+
+            </div>
+
         </div>
 
         <?php include("includes/nowPlayingBar.php");?>

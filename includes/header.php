@@ -1,5 +1,6 @@
 <?php
 include("includes/config.php");
+//include("includes/classes/Lecionador.php");
 
 //session_destroy();
 

@@ -10,7 +10,14 @@ else {
 $cursosQuery = mysqli_query($conex, "SELECT * FROM cursos WHERE id='$cursoId'");
 $cursos = mysqli_fetch_array($cursosQuery);
 
-echo $cursos['titulo'];
+$lecionadorId = $cursos['lecionador'];
+
+$lecionadorQuery = (mysqli_query($conex, "SELECT * FROM lecionadores WHERE id='$lecionadorId'"));
+
+$lecionadores = mysqli_fetch_array($lecionadorQuery);
+
+echo $cursos['titulo'] . "<br>";
+echo $lecionadores['nome'];
 
 ?>
 

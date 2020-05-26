@@ -1,6 +1,8 @@
 <?php
 include("includes/config.php");
-//include("includes/classes/Lecionador.php");
+include("includes/classes/Lecionador.php");
+include("includes/classes/Curso.php");
+include("includes/classes/Media.php");
 
 //session_destroy();
 
